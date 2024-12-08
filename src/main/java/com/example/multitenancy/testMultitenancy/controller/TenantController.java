@@ -41,15 +41,13 @@ public class TenantController {
 
     @GetMapping("/testTenant")
     public String testTenant(@RequestParam String tenantId) {
-        tenantService.testTenant(tenantId);
+        tenantService.saveTenantInfo(tenantId);
         return "Test completed for tenant: " + tenantId;
     }
 
     @GetMapping("/getTenant")
     public String getTestTenant(@RequestParam String tenantId) {
-
-
-        return tenantService.getTestTenant(tenantId);
+        return tenantService.getTenantInfo(tenantId);
 
     }
     }

@@ -13,14 +13,14 @@ public class TenantService {
     @Autowired
     private UserRepository userRepository;
 
-    public void testTenant(String tenantId) {
+    public void saveTenantInfo(String tenantId) {
         TenantContext.setCurrentTenant(tenantId); // Set tenant context
         userRepository.save(new User(tenantId)); // Save data to tenant DB
         System.out.println("Data saved for tenant: " + tenantId);
         TenantContext.clear(); // Clear tenant context
     }
 
-    public String getTestTenant(String tenantId) {
+    public String getTenantInfo(String tenantId) {
         TenantContext.setCurrentTenant(tenantId);
         User User = userRepository.findByName(tenantId);
         TenantContext.clear();

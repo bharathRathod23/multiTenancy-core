@@ -47,7 +47,7 @@ public class TenantController {
 
     @GetMapping("/getTenant")
     public String getTestTenant(@RequestParam String tenantId) {
-        return tenantService.getTenantInfo(tenantId);
+        return "Tenant is " + tenantService.getTenantInfo(tenantId);
 
     }
     }

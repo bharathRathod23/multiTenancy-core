@@ -7,8 +7,8 @@ datasource-config:
         driver-class-name: org.h2.Driver
       clovia:
         url: jdbc:h2:mem:clovia;DB_CLOSE_DELAY=-1
-        username: sahah
-        password: passwordhah
+        username: sa
+        password: password
         driver-class-name: org.h2.Driver
 
 server:

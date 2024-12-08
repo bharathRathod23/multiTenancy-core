@@ -1,4 +1,4 @@
-package com.example.multitenancy.controller;
+package com.example.multitenancy.testMultitenancy.entity;
 
 import jakarta.persistence.*;
 

@@ -1,7 +1,9 @@
-package com.example.multitenancy.controller;
+package com.example.multitenancy.testMultitenancy.service;
 
 
 import com.example.multitenancy.context.TenantContext;
+import com.example.multitenancy.testMultitenancy.entity.User;
+import com.example.multitenancy.testMultitenancy.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

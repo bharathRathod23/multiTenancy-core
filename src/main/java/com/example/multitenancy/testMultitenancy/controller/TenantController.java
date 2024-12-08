@@ -1,8 +1,9 @@
-package com.example.multitenancy.controller;
+package com.example.multitenancy.testMultitenancy.controller;
 
 import com.example.multitenancy.config.datasource.DataSourceConfig;
 import com.example.multitenancy.config.datasource.DataSourceProperties;
 import com.example.multitenancy.context.TenantContext;
+import com.example.multitenancy.testMultitenancy.service.TenantService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
